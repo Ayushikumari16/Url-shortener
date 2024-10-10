@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <script src="https://cdn.lordicon.com/lordicon.js"></script>
+        <lord-icon
+            src="https://cdn.lordicon.com/gsjfryhc.json"
+            trigger="hover"
+            stroke="bold"
+            style="width:100px;height:100px">
+        </lord-icon>                                                                                                                
+        <h1>Shorten a Long URL</h1>
+        <label for="longUrl">Enter URL to Shorten:</label>
+        <input type="text" id="longUrl" placeholder="Enter URL to Shorten">
+        
+        <div class="buttons">
+            <button id="reload-btn">
+                <i class='bx bx-refresh'></i> Refresh
+            </button>
+            <button id="short-btn">
+                <i class='bx bx-link'></i> Shorten URL
+            </button>
+        </div>
+
+        <label for="shortUrl">Shortened URL:</label>
+        <textarea id="shortUrl" rows="3" readonly></textarea>
+        
+        <small>Powered by Ayushi</small>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
